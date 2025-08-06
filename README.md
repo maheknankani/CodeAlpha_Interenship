@@ -1,4 +1,5 @@
-CodeAlpha Internship Projects
+CodeAlpha Internship Projects:
+
 Website: www.codealpha.tech
 This repository contains all tasks completed during the CodeAlpha Web Development Internship.
  Task 1: Image Gallery
@@ -17,7 +18,7 @@ Smooth scroll, animations, and mobile-friendly
 
 Deployed on GitHub Pages
 
-✅ Task 4: Music Player
+Task 4: Music Player
 Music player with play/pause/next/prev
 Shows song info, progress bar, volume control
 Bonus: Playlist and autoplay features
