@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahek Nankani | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4b8b1b1e7b.js" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="animations.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Mahek<span>.</span></div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+      <a href="#contact" class="btn-primary">Let's Talk</a>
+    </div>
+    <div class="nav-overlay"></div>
+  </header>
+
+
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="#home" data-section="Home"></a></li>
+      <li><a href="#about" data-section="About"></a></li>
+      <li><a href="#education" data-section="Education"></a></li>
+      <li><a href="#skills" data-section="Skills"></a></li>
+      <li><a href="#projects" data-section="Projects"></a></li>
+      <li><a href="#certificates" data-section="Certificates"></a></li>
+      <li><a href="#interests" data-section="Interests"></a></li>
+      <li><a href="#contact" data-section="Contact"></a></li>
+    </ul>
+  </nav>
+
+  <main>
+  <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text fade-in">
+            <h1>Hello, I'm <span>Mahek Nankani</span></h1>
+            <h2 class="slide-in-left">Front-End Developer | UI/UX Designer</h2>
+            <p class="fade-in-delayed">
+              Creative Computer Science student passionate about Front-End Development and UI/UX Design. I transform ideas into stunning digital experiences that combine functionality with beautiful design.
+            </p>
+            <div class="hero-buttons">
+              <a href="#about" class="btn-filled">Learn More</a>
+              <a href="#contact" class="btn-outline">Contact Me</a>
+              <a href="resume-1.pdf" class="btn-cv" download="Mahek_Nankani_Resume.pdf">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
+            <div class="social-icons-hero">
+              <a href="https://facebook.com/your-profile" class="social-icon-hero" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mahek-nankani" class="social-icon-hero" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/maheknankani" class="social-icon-hero" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image fade-in-right">
+            <img src="meee.jpg" alt="Mahek Nankani portrait" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a passionate and driven third-year Computer Science student at SZABIST Karachi, deeply inspired by both technology and art. My journey combines the logic of code with the creativity of design, allowing me to craft visually appealing and user-friendly digital experiences.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>Front-End Development</h3>
+              <p>With a focus on Front-End Development, I specialize in building interactive, clean, and functional interfaces using modern technologies like React Native, JavaScript, HTML5, and CSS3. I create responsive websites that work seamlessly across all devices.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>UI/UX Design</h3>
+              <p>I love designing mobile and web applications where code meets creativity. Using tools like Adobe Illustrator and Figma, I create interfaces that tell a story and provide exceptional user experiences with modern design principles.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="highlight-content">
+              <h3>Innovation & Growth</h3>
+              <p>I continuously challenge myself to explore new tools, enhance my skills, and push the boundaries of user experience. Whether it's designing interfaces, developing prototypes, or coding real-world projects, I'm on a mission to bridge the gap between innovation and imagination—one pixel and one line of code at a time.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-mission">
+          <blockquote>
+            <p>"My goal is to create digital experiences that not only look beautiful but also solve real problems and make technology more accessible to everyone."</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="slide-in-left">
+      <h2>Education</h2>
+      <div class="education-timeline">
+        <div class="timeline-entry fade-in">
+          <div class="timeline-icon"><i class="fas fa-university"></i></div>
+          <div class="timeline-content">
+            <h3>SZABIST University – Karachi</h3>
+            <p><i class="fas fa-graduation-cap"></i> Bachelor of Science in Computer Science</p>
+            <p><i class="fas fa-calendar-alt"></i> 2022 – 2026</p>
+            <p><strong>Current CGPA:</strong> 3.37</p>
+            <ul>
+              <li>Focused on Front-End Development, UI/UX Design, Human-Computer Interaction, and Visual Computing.</li>
+              <li>Designed and developed user interfaces for academic projects by combining coding with creative design thinking.</li>
+              <li>Gained practical experience with tools like Adobe Illustrator, Figma, React Native, and JavaScript-based UI frameworks.</li>
+              <li>Participated in design-focused university events including ZAB-E-FEST UI Development Competition.</li>
+              <li>Continuously exploring ways to merge creativity with functionality in digital user experiences.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-entry fade-in-delayed">
+          <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <h3>Sindh Public Higher Secondary School – Ghotki</h3>
+            <p><i class="fas fa-book"></i> Intermediate (Pre-Engineering)</p>
+            <p><i class="fas fa-calendar-alt"></i> 2020 – 2022</p>
+            <p><strong>Grade:</strong> 82%</p>
+            <ul>
+              <li>Built strong foundations in Mathematics, Physics, and Computer Science, laying the groundwork for a career in tech and design.</li>
+              <li>Actively involved in creative school activities including poster design, tech quizzes, and arts competitions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-entry slide-in-left">
+          <div class="timeline-icon"><i class="fas fa-school"></i></div>
+          <div class="timeline-content">
+            <h3>Matriculation (Science Group)</h3>
+            <p><i class="fas fa-book"></i> Sindh Public Higher Secondary School – Ghotki</p>
+            <p><i class="fas fa-calendar-alt"></i> 2018 – 2020</p>
+            <p><strong>Grade:</strong> 78.8%</p>
+            <ul>
+              <li>Developed analytical and creative thinking skills.</li>
+              <li>Recognized for consistent academic performance and participation in creative arts programs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="slide-in-bottom">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <div class="skill-title">C <span class="skill-percentage">80%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Java <span class="skill-percentage">75%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">HTML <span class="skill-percentage">95%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">CSS <span class="skill-percentage">92%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 92%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">JavaScript <span class="skill-percentage">90%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Python <span class="skill-percentage">70%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">PHP <span class="skill-percentage">65%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">React Native <span class="skill-percentage">60%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">PostgreSQL <span class="skill-percentage">55%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 55%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Adobe Illustrator <span class="skill-percentage">80%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Logo Design <span class="skill-percentage">85%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">App UI Design <span class="skill-percentage">90%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Problem Solving <span class="skill-percentage">90%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Teamwork <span class="skill-percentage">85%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Communication <span class="skill-percentage">88%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 88%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Leadership <span class="skill-percentage">80%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+         <div class="skill">
+          <div class="skill-title">Mongodb<span class="skill-percentage">80%</span></div>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in" style="animation-delay:0.1s;">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Chatbot" class="project-img">
+          <h3>💬 Chatbot</h3>
+          <div class="tech">HTML, CSS, JS</div>
+          <p>Developed using HTML, CSS, and JavaScript to simulate real-time conversation and enhance user engagement.</p>
+        </div>
+        <div class="project-card fade-in-delayed" style="animation-delay:0.2s;">
+          <img src="coffee-website.jpg" alt="Coffee Website" class="project-img">
+          <h3>☕ Coffee Website</h3>
+          <div class="tech">HTML, CSS, JS</div>
+          <p>Built a responsive coffee shop website with intuitive layout and modern design using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card slide-in-left" style="animation-delay:0.3s;">
+          <img src="uiux.webp" alt="Home Service App UI/UX" class="project-img">
+          <h3>🎨 Home Service App UI/UX</h3>
+          <div class="tech">Adobe Illustrator</div>
+          <p>Designed branding, logo, and UI using Adobe Illustrator for a mobile-based home service platform.</p>
+        </div>
+        <div class="project-card slide-in-bottom" style="animation-delay:0.4s;">
+          <img src="Age-calculator.png" alt="Age Calculator" class="project-img">
+          <h3>📅 Age Calculator</h3>
+          <div class="tech">HTML, CSS, JS</div>
+          <p>A dynamic web tool built with JavaScript to calculate age based on user input.</p>
+        </div>
+        <div class="project-card fade-in" style="animation-delay:0.5s;">
+          <div class="project-img-wrapper">
+            <img src="ecomerce.jpeg" alt="E-Commerce App" class="project-img">
+            <!-- <div class="project-hover-overlay"> -->
+              <!-- <div class="project-hover-content"> -->
+                <!-- <h4>E-Commerce App</h4>
+                <ul>
+                  <li>Mobile-first shopping experience</li>
+                  <li>Cart & checkout flow</li>
+                  <li>Product search & filters</li>
+                  <li>Modern UI with React Native</li>
+                </ul> -->
+                <!-- <a href="#" class="btn-outline btn-small">View More</a> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          </div>
+         
+          <h3>🛍️ E-Commerce App</h3>
+          <div class="tech">React Native</div>
+          <p>A mobile application for online shopping using React Native, offering smooth navigation and mobile responsiveness.</p>
+        </div>
+        <div class="project-card fade-in-right" style="animation-delay:0.6s;">
+          <img src="cisco-image.webp" alt="SZABIST Campus Network" class="project-img">
+          <h3>🌐 SZABIST Campus Network</h3>
+          <div class="tech">Cisco Packet Tracer</div>
+          <p>Created a simulated university campus network using Cisco Packet Tracer with subnetting and IP address management.</p>
+        </div>
+        <div class="project-card fade-in" style="animation-delay:0.7s;">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Weather Prediction System" class="project-img">
+          <h3>🌦️ Weather Prediction System</h3>
+          <div class="tech">Python, MLP, KNN, Decision Tree</div>
+          <p>AI-based project using Multilayer Perceptron (MLP), K-Nearest Neighbors (KNN), and Decision Tree algorithms for forecasting weather conditions across different Pakistani cities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="slide-in-bottom">
+      <h2>Certifications</h2>
+      <div class="certificates-list">
+        <div class="certificate-badge fade-in"><i class="fas fa-certificate"></i>  AIESEC – The Billion Rupee Code</div>
+        <div class="certificate-badge fade-in-delayed"><i class="fas fa-award"></i>  UI Development Participant – ZAB-E-FEST’25</div>
+        <div class="certificate-badge slide-in-left"><i class="fas fa-code"></i>  5-Day Fundamentals of Programming Bootcamp – GDSC</div>
+          <div class="certificate-badge slide-in-left"><i class="fas fa-code"></i>  GitHub Copilot Course completion – GITHUB</div>
+    </div>
+  </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="fade-in">
+      <h2>Interests</h2>
+      <ul>
+        <li> Art & Digital Illustration</li>
+        <li> Travel & Exploring Cultures</li>
+        <li> Creative Coding & Front-End Development</li>
+        <li> Learning New Tools and Tech Stacks</li>
+        <li>UI/UX Research</li>
+        
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+        <div style="flex:1; min-width: 220px;">
+          <p><strong>Location:</strong> Saddar, Karachi</p>
+          <p><strong>Phone:</strong> 0305-1233630</p>
+          <p><strong>Email:</strong> <a href="mailto:Maheknankani34@gmail.com">Maheknankani34@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mahek-nankani" target="_blank">linkedin.com/in/mahek-nankani</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/maheknankani" target="_blank">github.com/maheknankani</a></p>
+        </div>
+        <form class="contact-form" style="flex:1; min-width: 260px;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn-filled">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2025 Mahek Nankani</div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/mahek-nankani" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/maheknankani" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+  
+  
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.player {
+  width: 350px;
+  background: #2e2e3a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.album-art img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.controls, .bottom-controls {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.controls button, .bottom-controls button {
+  background: none;
+  border: none;
+  font-size: 26px;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#progress {
+  flex: 1;
+  accent-color: #e17564;
+}
+
+#volume {
+  width: 100px;
+  margin: 0 10px;
+  accent-color: #be3144;
+}
+
+#playlist {
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+#playlist li {
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#playlist li:hover,
+#playlist li.active {
+  background: #444;
+  border-radius: 8px;
+}
+
+/* Light Theme Styles */
+body.light-theme {
+  background: linear-gradient(to right, #f0f2f5, #e3e3e3);
+  color: #333;
+}
+
+body.light-theme .player {
+  background: #fff;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+body.light-theme .controls button,
+body.light-theme .bottom-controls button {
+  color: #333;
+}
+
+body.light-theme #playlist li:hover,
+body.light-theme #playlist li.active {
+  background: #ddd;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+body.light-theme .theme-toggle {
+  color: #333;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Clean Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: #1f2937;
+      border-radius: 16px;
+      padding: 24px;
+      width: 320px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .display {
+      background: #111827;
+      color: #60a5fa;
+      font-size: 2em;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: right;
+      overflow-x: auto;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 18px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 12px;
+      background: #374151;
+      color: #e5e7eb;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #60a5fa;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .operator {
+      background: #2563eb;
+      color: white;
+    }
+
+    .operator:hover {
+      background: #3b82f6;
+    }
+
+    .clear {
+      background: #ef4444;
+      color: white;
+    }
+
+    .clear:hover {
+      background: #f87171;
+    }
+
+    .equals {
+      background: #10b981;
+      grid-column: span 2;
+      color: white;
+    }
+
+    .equals:hover {
+      background: #34d399;
+    }
+
+    @media (max-width: 400px) {
+      .calculator {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="buttons">
+      <button class="clear" onclick="clearDisplay()">C</button>
+      <button onclick="append('%')">%</button>
+      <button onclick="append('/')">÷</button>
+      <button class="operator" onclick="append('*')">×</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button class="operator" onclick="append('-')">−</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button class="operator" onclick="append('+')">+</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="deleteLast()">⌫</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button class="equals" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script>
+    const display = document.getElementById("display");
+
+    function append(value) {
+      if (display.innerText === "0" || display.innerText === "Error") {
+        display.innerText = value;
+      } else {
+        display.innerText += value;
+      }
+    }
+
+    function clearDisplay() {
+      display.innerText = "0";
+    }
+
+    function deleteLast() {
+      if (display.innerText.length === 1 || display.innerText === "Error") {
+        display.innerText = "0";
+      } else {
+        display.innerText = display.innerText.slice(0, -1);
+      }
+    }
+
+    function calculate() {
+      try {
+        display.innerText = eval(display.innerText.replace('÷', '/').replace('×', '*'));
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+
+    // Keyboard Support
+    document.addEventListener("keydown", (e) => {
+      const allowedKeys = "0123456789+-*/.%";
+      if (allowedKeys.includes(e.key)) {
+        append(e.key);
+      } else if (e.key === "Enter") {
+        calculate();
+      } else if (e.key === "Backspace") {
+        deleteLast();
+      } else if (e.key === "Escape") {
+        clearDisplay();
+      }
+    });
+  </script>
+</body>
+</html>
